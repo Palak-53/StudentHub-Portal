@@ -257,27 +257,6 @@
   font-weight: 800;
 }
 
-.login-demo-note {
-  margin: 15px 0 0;
-  padding: 11px 13px;
-  color: var(--text-muted);
-  background: var(--primary-light);
-  border: 1px solid var(--border-subtle);
-  border-radius: 9px;
-  font-size: 11px;
-  line-height: 1.65;
-}
-
-.login-demo-note strong {
-  color: var(--text-main);
-}
-
-.login-demo-note code {
-  color: var(--primary);
-  font-family: var(--font-family);
-  font-weight: 700;
-}
-
 .login-divider {
   display: flex;
   align-items: center;

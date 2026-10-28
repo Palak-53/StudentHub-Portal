@@ -105,13 +105,6 @@ $csrfToken = app_csrf_token();
                 </button>
             </form>
 
-            <p class="login-demo-note">
-                <strong>Demo student account (local testing only):</strong><br>
-                Email: <code>student.demo@example.com</code><br>
-                Password: <code>Student@123</code><br>
-                Change or remove these demo credentials before deployment.
-            </p>
-
             <div class="login-divider"><span>NEW TO STUDENT HUB?</span></div>
             <a class="login-create-account" href="signup.html">Create a student account <span aria-hidden="true">→</span></a>
             <p class="login-security-note"><span aria-hidden="true">●</span> Your account is protected with secure sign-in.</p>
