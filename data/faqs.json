@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "question": "How do I apply for leave?",
+    "answer": "Go to the Leave Application section from the dashboard. Fill in your details including start date, end date, and reason. Submit the form and your request will be reviewed by the faculty. You will receive a notification once it is approved or rejected.",
+    "category": "Leave",
+    "helpful": 142,
+    "views": 890,
+    "tags": ["leave", "application", "faculty"]
+  },
+  {
+    "id": 2,
+    "question": "Where can I view my attendance records?",
+    "answer": "Click on the Attendance card on the dashboard. It shows your subject-wise attendance percentage with a colour-coded indicator. You will receive an alert if your attendance falls below the required 75% threshold.",
+    "category": "Attendance",
+    "helpful": 198,
+    "views": 1240,
+    "tags": ["attendance", "percentage", "subjects"]
+  },
+  {
+    "id": 3,
+    "question": "How do I download study materials and notes?",
+    "answer": "Navigate to the Course Materials section. Select your subject and you will find all uploaded PDFs, notes, and resources. Click the Download button next to any file to save it to your device.",
+    "category": "Materials",
+    "helpful": 176,
+    "views": 980,
+    "tags": ["materials", "download", "notes", "PDF"]
+  },
+  {
+    "id": 4,
+    "question": "How do I switch between light and dark mode?",
+    "answer": "Click the moon (🌙) or sun (☀️) icon in the top-right corner of the header. Your preference is automatically saved to localStorage and will be remembered every time you visit the portal.",
+    "category": "General",
+    "helpful": 89,
+    "views": 654,
+    "tags": ["dark mode", "theme", "settings"]
+  },
+  {
+    "id": 5,
+    "question": "How can I check my semester exam results?",
+    "answer": "Click on the Results card on your dashboard. You can view semester-wise results including subject grades, total marks, and your current CGPA. Results are updated by the admin after declaration.",
+    "category": "Results",
+    "helpful": 211,
+    "views": 1560,
+    "tags": ["results", "grades", "CGPA", "marks"]
+  },
+  {
+    "id": 6,
+    "question": "How do I pay my college fees online?",
+    "answer": "Go to the Fees section from the dashboard. You can view your fee structure, dues, and payment history. Click Pay Now to be redirected to the secure payment gateway. Keep the receipt for your records.",
+    "category": "Fees",
+    "helpful": 167,
+    "views": 1120,
+    "tags": ["fees", "payment", "dues", "receipt"]
+  },
+  {
+    "id": 7,
+    "question": "How do I update my profile information?",
+    "answer": "Click your profile icon or name in the navigation bar to go to the Profile page. From there you can update your mobile number, address, profile photo, and other personal details. Changes require admin approval for official records.",
+    "category": "Profile",
+    "helpful": 134,
+    "views": 780,
+    "tags": ["profile", "update", "personal details"]
+  },
+  {
+    "id": 8,
+    "question": "What should I do if I forget my password?",
+    "answer": "On the login page, click 'Forgot Password'. Enter your registered college email address. You will receive an OTP or reset link. Use it to set a new password. Contact the admin if you no longer have access to your registered email.",
+    "category": "Account",
+    "helpful": 245,
+    "views": 1890,
+    "tags": ["password", "forgot", "reset", "OTP"]
+  },
+  {
+    "id": 9,
+    "question": "How do I register for college events?",
+    "answer": "Go to the Events section from the main menu or the Data Explorer page. Browse upcoming events and click Register on any event you wish to attend. Make sure to register before the deadline as seats are limited.",
+    "category": "Events",
+    "helpful": 112,
+    "views": 690,
+    "tags": ["events", "register", "seats"]
+  },
+  {
+    "id": 10,
+    "question": "How can I contact my faculty members?",
+    "answer": "Go to the Faculty Details section from the dashboard. It lists all faculty members with their designation, department, office hours, and college email address. You can reach out to them directly via email.",
+    "category": "Faculty",
+    "helpful": 98,
+    "views": 560,
+    "tags": ["faculty", "contact", "email", "office hours"]
+  },
+  {
+    "id": 11,
+    "question": "Where can I view my weekly timetable?",
+    "answer": "Click on the Timetable card on the dashboard or visit the Student section. Your weekly class schedule is displayed with subject names, timings, room numbers and faculty names.",
+    "category": "General",
+    "helpful": 156,
+    "views": 870,
+    "tags": ["timetable", "schedule", "class", "timing"]
+  },
+  {
+    "id": 12,
+    "question": "How do I check my fee payment status?",
+    "answer": "In the Fees section, there is a Payment History tab that shows all your transactions with date, amount, and payment reference number. A green badge means payment is confirmed; red means due.",
+    "category": "Fees",
+    "helpful": 143,
+    "views": 920,
+    "tags": ["fees", "payment status", "history", "due"]
+  },
+  {
+    "id": 13,
+    "question": "Can I access the portal from my mobile phone?",
+    "answer": "Yes, Student Hub Portal is fully responsive and works on all modern browsers on smartphones, tablets, and desktops. No separate app is required. Simply open the URL in your mobile browser.",
+    "category": "General",
+    "helpful": 201,
+    "views": 1340,
+    "tags": ["mobile", "responsive", "browser", "access"]
+  },
+  {
+    "id": 14,
+    "question": "How are attendance alerts sent to students?",
+    "answer": "When your attendance in any subject drops below 75%, the portal automatically marks it with a red warning badge on the Attendance page. Additionally, an email notification is sent to your registered college email address.",
+    "category": "Attendance",
+    "helpful": 178,
+    "views": 1050,
+    "tags": ["attendance", "alert", "notification", "email", "75%"]
+  },
+  {
+    "id": 15,
+    "question": "How can I track my CGPA progress?",
+    "answer": "The Results section shows a semester-wise CGPA chart so you can track your academic progress over time. It also shows your standing relative to the department average.",
+    "category": "Results",
+    "helpful": 189,
+    "views": 1120,
+    "tags": ["CGPA", "progress", "results", "chart"]
+  },
+  {
+    "id": 16,
+    "question": "What documents do I need for leave application?",
+    "answer": "For medical leave, attach a doctor's certificate or hospital report. For other types of leave, a self-declaration is sufficient. Documents can be uploaded as PDF or image files directly through the portal.",
+    "category": "Leave",
+    "helpful": 122,
+    "views": 740,
+    "tags": ["leave", "documents", "medical", "certificate"]
+  },
+  {
+    "id": 17,
+    "question": "How do I know if my leave application was approved?",
+    "answer": "After submitting a leave application, you will receive an in-portal notification in the Notifications section and an email to your registered address once the faculty has approved or rejected your request.",
+    "category": "Leave",
+    "helpful": 109,
+    "views": 680,
+    "tags": ["leave", "approval", "notification", "status"]
+  }
+]

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Results | Student Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (Grid & Flexbox Design System) -->
+    <link rel="stylesheet" href="css/style.css?v=20261028.2">
+    <link rel="stylesheet" href="css/interactive.css?v=20261028.2">
+    <link rel="stylesheet" href="css/role-dashboard.css?v=20261028.2">
+</head>
+<body>
+
+    <header class="app-header">
+        <a href="home.html" class="brand">
+            <span class="brand-icon">S</span>
+            <span class="brand-text">Student Hub</span>
+        </a>
+        <div class="header-nav">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="notice.html">Notifications</a>
+            <a href="contact.php">Contact</a>
+            <a href="profile.html" class="nav-profile-box" title="View Profile">
+                <span class="nav-profile-avatar">👤</span>
+                <span class="nav-profile-name">Palak K.</span>
+            </a>
+            <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+        </div>
+    </header>
+
+    <main class="app-container">
+
+        <div class="breadcrumb">
+            <a href="home.html">Home</a> / <span>Academic Results</span>
+        </div>
+
+        <h1 class="page-title">Academic Results</h1>
+
+        <!-- Stats Grid (CSS Grid) -->
+        <div class="stat-grid">
+            <div class="stat-card">
+                <div class="stat-value blue">9.10</div>
+                <div class="stat-label">3rd Sem SGPA</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-value green">8.85</div>
+                <div class="stat-label">Overall CGPA</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-value dark">64</div>
+                <div class="stat-label">Earned Credits</div>
+            </div>
+        </div>
+
+        <!-- 3rd Semester Detailed Results -->
+        <h2>3rd Semester Marksheet</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject Code</th>
+                        <th>Subject Name</th>
+                        <th>Credits</th>
+                        <th>Internal (30)</th>
+                        <th>External (70)</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: 700;">CS301</td>
+                        <td style="text-align: left;">Data Structures & Algorithms</td>
+                        <td>4</td>
+                        <td>27</td>
+                        <td>62</td>
+                        <td class="val-green">AA (10)</td>
+                        <td><span class="badge-tag low" style="color:#16a34a; background:#dcfce7; border-color:#16a34a;">PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700;">CS302</td>
+                        <td style="text-align: left;">Database Management Systems</td>
+                        <td>4</td>
+                        <td>25</td>
+                        <td>59</td>
+                        <td class="val-green">AB (9)</td>
+                        <td><span class="badge-tag low" style="color:#16a34a; background:#dcfce7; border-color:#16a34a;">PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700;">CS303</td>
+                        <td style="text-align: left;">Operating Systems</td>
+                        <td>3</td>
+                        <td>24</td>
+                        <td>55</td>
+                        <td class="val-green">AB (9)</td>
+                        <td><span class="badge-tag low" style="color:#16a34a; background:#dcfce7; border-color:#16a34a;">PASS</span></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700;">CS304</td>
+                        <td style="text-align: left;">Computer Networks</td>
+                        <td>3</td>
+                        <td>26</td>
+                        <td>58</td>
+                        <td class="val-green">AA (10)</td>
+                        <td><span class="badge-tag low" style="color:#16a34a; background:#dcfce7; border-color:#16a34a;">PASS</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Semester Wise SGPA Summary -->
+        <h2>Semester Performance History</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Total Credits</th>
+                        <th>SGPA</th>
+                        <th>Result Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: 700;">1st Semester</td>
+                        <td>22</td>
+                        <td class="val-green">8.60</td>
+                        <td>Passed</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700;">2nd Semester</td>
+                        <td>22</td>
+                        <td class="val-green">8.85</td>
+                        <td>Passed</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700;">3rd Semester</td>
+                        <td>20</td>
+                        <td class="val-green">9.10</td>
+                        <td>Passed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 24px;">
+            <button class="btn-primary" onclick="alert('Downloading 3rd Semester Official Marksheet...')">📄 Download Marksheet (PDF)</button>
+        </div>
+
+    </main>
+
+    <footer class="app-footer">
+        <p>© 2026 Student Hub Portal. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js?v=20261028.4"></script>
+    <script src="js/interactive.js?v=20261028.2"></script>
+</body>
+</html>

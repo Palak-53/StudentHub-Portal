@@ -1,0 +1,208 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 2768 >>
+stream
+BT
+/F2 18 Tf
+52 790 Td
+(Operating Systems) Tj
+/F1 9 Tf
+0 -22 Td
+(Student Hub | Original study summary | For revision and self-study) Tj
+0 -18 Td
+/F1 9 Tf
+1 0 0 1 52 750 Tm
+/F2 11 Tf
+(Course) Tj
+1 0 0 1 52 734 Tm
+/F1 9 Tf
+(CS303 | Student Hub Original Revision Guide) Tj
+1 0 0 1 52 713 Tm
+/F2 11 Tf
+(1. Processes and threads) Tj
+1 0 0 1 52 697 Tm
+/F1 9 Tf
+(A process owns an address space and operating-system resources. Threads within a process) Tj
+1 0 0 1 52 684 Tm
+/F1 9 Tf
+(share much of that state but have separate execution contexts. Context switching saves one) Tj
+1 0 0 1 52 671 Tm
+/F1 9 Tf
+(execution state and restores another.) Tj
+1 0 0 1 52 650 Tm
+/F2 11 Tf
+(2. CPU scheduling) Tj
+1 0 0 1 52 634 Tm
+/F1 9 Tf
+(Scheduling chooses which ready task runs next. Compare policies using waiting time,) Tj
+1 0 0 1 52 621 Tm
+/F1 9 Tf
+(turnaround time, response time, fairness, and workload assumptions. A policy that helps one) Tj
+1 0 0 1 52 608 Tm
+/F1 9 Tf
+(metric can hurt another.) Tj
+1 0 0 1 52 587 Tm
+/F2 11 Tf
+(3. Synchronization) Tj
+1 0 0 1 52 571 Tm
+/F1 9 Tf
+(A race condition occurs when results depend on timing between concurrent operations. Protect) Tj
+1 0 0 1 52 558 Tm
+/F1 9 Tf
+(shared invariants with synchronization. A critical section should have mutual exclusion and) Tj
+1 0 0 1 52 545 Tm
+/F1 9 Tf
+(avoid deadlock and starvation.) Tj
+1 0 0 1 52 524 Tm
+/F2 11 Tf
+(4. Deadlocks) Tj
+1 0 0 1 52 508 Tm
+/F1 9 Tf
+(Deadlock requires mutual exclusion, hold-and-wait, no preemption, and circular wait. Systems) Tj
+1 0 0 1 52 495 Tm
+/F1 9 Tf
+(can prevent one condition, avoid unsafe states, detect and recover, or accept the risk) Tj
+1 0 0 1 52 482 Tm
+/F1 9 Tf
+(depending on the setting.) Tj
+1 0 0 1 52 461 Tm
+/F2 11 Tf
+(5. Memory and virtual memory) Tj
+1 0 0 1 52 445 Tm
+/F1 9 Tf
+(Virtual addresses are translated to physical memory. Paging divides address spaces into) Tj
+1 0 0 1 52 432 Tm
+/F1 9 Tf
+(fixed-size pages and frames. A page fault may require loading a page from storage; locality) Tj
+1 0 0 1 52 419 Tm
+/F1 9 Tf
+(makes caching effective.) Tj
+1 0 0 1 52 398 Tm
+/F2 11 Tf
+(6. Files and I/O) Tj
+1 0 0 1 52 382 Tm
+/F1 9 Tf
+(File systems map names and directories to stored data and metadata. I/O devices are) Tj
+1 0 0 1 52 369 Tm
+/F1 9 Tf
+(coordinated through drivers, buffering, and interrupts. Reliability includes permissions,) Tj
+1 0 0 1 52 356 Tm
+/F1 9 Tf
+(error handling, and recovery after failure.) Tj
+1 0 0 1 52 335 Tm
+/F2 11 Tf
+(Study checklist) Tj
+1 0 0 1 52 319 Tm
+/F1 9 Tf
+(Draw process states, trace a scheduler, identify a race in a short example, translate a page) Tj
+1 0 0 1 52 306 Tm
+/F1 9 Tf
+(number and offset, and explain what happens on a page fault.) Tj
+ET
+BT
+/F1 8 Tf
+52 28 Td
+(Student Hub CS study guide - page 1 of 2) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 1539 >>
+stream
+BT
+/F2 18 Tf
+52 790 Td
+(Operating Systems) Tj
+/F1 9 Tf
+0 -22 Td
+(Student Hub | Original study summary | For revision and self-study) Tj
+0 -18 Td
+/F1 9 Tf
+1 0 0 1 52 750 Tm
+/F2 11 Tf
+(Practice prompts) Tj
+1 0 0 1 52 734 Tm
+/F1 9 Tf
+(1\) How do process and thread address spaces differ? 2\) What four conditions are needed for) Tj
+1 0 0 1 52 721 Tm
+/F1 9 Tf
+(deadlock? 3\) What is a page fault? 4\) Why can adding a lock reduce correctness bugs but also) Tj
+1 0 0 1 52 708 Tm
+/F1 9 Tf
+(reduce parallelism?) Tj
+1 0 0 1 52 687 Tm
+/F2 11 Tf
+(Suggested answers) Tj
+1 0 0 1 52 671 Tm
+/F1 9 Tf
+(1\) Processes generally have separate address spaces; threads in one process share that) Tj
+1 0 0 1 52 658 Tm
+/F1 9 Tf
+(address space. 2\) Mutual exclusion, hold-and-wait, no preemption, circular wait. 3\) A) Tj
+1 0 0 1 52 645 Tm
+/F1 9 Tf
+(requested virtual page is not currently mapped to resident memory. 4\) Locking serializes) Tj
+1 0 0 1 52 632 Tm
+/F1 9 Tf
+(access to protected shared state.) Tj
+1 0 0 1 52 611 Tm
+/F2 11 Tf
+(Practical approach) Tj
+1 0 0 1 52 595 Tm
+/F1 9 Tf
+(When debugging concurrency, state the shared invariant, list the operations that access it,) Tj
+1 0 0 1 52 582 Tm
+/F1 9 Tf
+(then identify the smallest critical section that preserves it.) Tj
+1 0 0 1 52 561 Tm
+/F2 11 Tf
+(Further reading) Tj
+1 0 0 1 52 545 Tm
+/F1 9 Tf
+(OSTEP and the Linux kernel documentation are linked from the Student Hub Course Materials) Tj
+1 0 0 1 52 532 Tm
+/F1 9 Tf
+(page.) Tj
+ET
+BT
+/F1 8 Tf
+52 28 Td
+(Student Hub CS study guide - page 2 of 2) Tj
+ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000000462 00000 n 
+0000003282 00000 n 
+0000003418 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+5009
+%%EOF

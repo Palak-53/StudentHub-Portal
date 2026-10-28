@@ -1,0 +1,199 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 2551 >>
+stream
+BT
+/F2 18 Tf
+52 790 Td
+(Database Management Systems) Tj
+/F1 9 Tf
+0 -22 Td
+(Student Hub | Original study summary | For revision and self-study) Tj
+0 -18 Td
+/F1 9 Tf
+1 0 0 1 52 750 Tm
+/F2 11 Tf
+(Course) Tj
+1 0 0 1 52 734 Tm
+/F1 9 Tf
+(CS302 | Student Hub Original Revision Guide) Tj
+1 0 0 1 52 713 Tm
+/F2 11 Tf
+(1. Relational model) Tj
+1 0 0 1 52 697 Tm
+/F1 9 Tf
+(A relation is represented as rows and columns. A primary key identifies a row; a foreign key) Tj
+1 0 0 1 52 684 Tm
+/F1 9 Tf
+(references a key in another relation. Choose keys that are unique, stable, and non-null.) Tj
+1 0 0 1 52 663 Tm
+/F2 11 Tf
+(2. ER design) Tj
+1 0 0 1 52 647 Tm
+/F1 9 Tf
+(Identify entities, attributes, and relationships before creating tables. Resolve many-to-) Tj
+1 0 0 1 52 634 Tm
+/F1 9 Tf
+(many relationships with a junction table. Record cardinality and optionality so the schema) Tj
+1 0 0 1 52 621 Tm
+/F1 9 Tf
+(reflects the real rules.) Tj
+1 0 0 1 52 600 Tm
+/F2 11 Tf
+(3. Normalization) Tj
+1 0 0 1 52 584 Tm
+/F1 9 Tf
+(First normal form stores atomic values and avoids repeating groups. Second normal form) Tj
+1 0 0 1 52 571 Tm
+/F1 9 Tf
+(removes partial dependencies on part of a composite key. Third normal form removes non-key) Tj
+1 0 0 1 52 558 Tm
+/F1 9 Tf
+(dependencies on other non-key attributes.) Tj
+1 0 0 1 52 537 Tm
+/F2 11 Tf
+(4. SQL essentials) Tj
+1 0 0 1 52 521 Tm
+/F1 9 Tf
+(SELECT chooses columns; WHERE filters rows; JOIN combines related tables; GROUP BY) Tj
+1 0 0 1 52 508 Tm
+/F1 9 Tf
+(aggregates groups; HAVING filters groups; ORDER BY sorts results. Use parameters for values) Tj
+1 0 0 1 52 495 Tm
+/F1 9 Tf
+(supplied by users.) Tj
+1 0 0 1 52 474 Tm
+/F2 11 Tf
+(5. Transactions) Tj
+1 0 0 1 52 458 Tm
+/F1 9 Tf
+(A transaction groups changes into one logical unit. ACID means atomicity, consistency,) Tj
+1 0 0 1 52 445 Tm
+/F1 9 Tf
+(isolation, and durability. Commit saves the unit; rollback cancels uncommitted changes.) Tj
+1 0 0 1 52 424 Tm
+/F2 11 Tf
+(6. Indexes and constraints) Tj
+1 0 0 1 52 408 Tm
+/F1 9 Tf
+(Indexes can speed up filters and joins but consume storage and add write cost. Use NOT NULL,) Tj
+1 0 0 1 52 395 Tm
+/F1 9 Tf
+(UNIQUE, CHECK, and foreign-key constraints to enforce valid data close to the database.) Tj
+1 0 0 1 52 374 Tm
+/F2 11 Tf
+(Study checklist) Tj
+1 0 0 1 52 358 Tm
+/F1 9 Tf
+(Sketch an ER diagram, map it to tables, mark keys, normalize a small example, then write a) Tj
+1 0 0 1 52 345 Tm
+/F1 9 Tf
+(parameterized SELECT with a join and aggregate.) Tj
+ET
+BT
+/F1 8 Tf
+52 28 Td
+(Student Hub CS study guide - page 1 of 2) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 1560 >>
+stream
+BT
+/F2 18 Tf
+52 790 Td
+(Database Management Systems) Tj
+/F1 9 Tf
+0 -22 Td
+(Student Hub | Original study summary | For revision and self-study) Tj
+0 -18 Td
+/F1 9 Tf
+1 0 0 1 52 750 Tm
+/F2 11 Tf
+(Practice schema) Tj
+1 0 0 1 52 734 Tm
+/F1 9 Tf
+(Imagine Student\(student_id, name\) and Enrollment\(student_id, course_id, grade\). The pair) Tj
+1 0 0 1 52 721 Tm
+/F1 9 Tf
+(\(student_id, course_id\) can be a composite key; student_id also references Student.) Tj
+1 0 0 1 52 700 Tm
+/F2 11 Tf
+(Practice prompts) Tj
+1 0 0 1 52 684 Tm
+/F1 9 Tf
+(1\) Why is a foreign key useful? 2\) Which clause filters aggregate groups? 3\) What does) Tj
+1 0 0 1 52 671 Tm
+/F1 9 Tf
+(rollback do? 4\) Why should user input be bound as a query parameter?) Tj
+1 0 0 1 52 650 Tm
+/F2 11 Tf
+(Suggested answers) Tj
+1 0 0 1 52 634 Tm
+/F1 9 Tf
+(1\) It preserves referential integrity. 2\) HAVING. 3\) It discards uncommitted changes in the) Tj
+1 0 0 1 52 621 Tm
+/F1 9 Tf
+(transaction. 4\) It keeps data separate from SQL syntax and helps prevent injection.) Tj
+1 0 0 1 52 600 Tm
+/F2 11 Tf
+(SQL habit) Tj
+1 0 0 1 52 584 Tm
+/F1 9 Tf
+(Select only the columns you need. Use explicit JOIN conditions, handle NULL deliberately,) Tj
+1 0 0 1 52 571 Tm
+/F1 9 Tf
+(and inspect query plans when performance matters.) Tj
+1 0 0 1 52 550 Tm
+/F2 11 Tf
+(Further reading) Tj
+1 0 0 1 52 534 Tm
+/F1 9 Tf
+(The PostgreSQL SQL tutorial and SQLBolt lessons are linked from the Student Hub Course) Tj
+1 0 0 1 52 521 Tm
+/F1 9 Tf
+(Materials page.) Tj
+ET
+BT
+/F1 8 Tf
+52 28 Td
+(Student Hub CS study guide - page 2 of 2) Tj
+ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000000462 00000 n 
+0000003065 00000 n 
+0000003201 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+4813
+%%EOF

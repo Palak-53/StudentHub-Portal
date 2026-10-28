@@ -1,0 +1,699 @@
+/* =========================================================
+   STUDENT HUB — REGISTRATION FORM STYLES
+   signup.css — Full form layout, validation states,
+                password strength, accessibility styles
+   ========================================================= */
+
+/* ── Page Layout ── */
+.auth-simple-header {
+  display: flex;
+  min-height: 68px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px clamp(20px, 5vw, 72px);
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.auth-simple-header .brand {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.auth-header-actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.auth-header-link {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.auth-header-link strong {
+  color: var(--primary);
+}
+
+.signup-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+/* ── Success Banner ── */
+.reg-success {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #dcfce7;
+  border: 1.5px solid #86efac;
+  border-radius: 14px;
+  padding: 18px 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 680px;
+  animation: fadeInDown 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.reg-success[aria-hidden="true"] {
+  display: none;
+}
+
+body.dark-mode .reg-success {
+  background: #14532d;
+  border-color: #16a34a;
+  color: #bbf7d0;
+}
+
+.reg-success-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.reg-success strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: #15803d;
+  display: block;
+  margin-bottom: 2px;
+}
+
+body.dark-mode .reg-success strong {
+  color: #86efac;
+}
+
+.reg-success p {
+  font-size: 13px;
+  color: #166534;
+  margin: 0;
+}
+
+body.dark-mode .reg-success p {
+  color: #bbf7d0;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Form Card ── */
+.reg-form {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 36px 40px;
+  width: 100%;
+  max-width: 680px;
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.07);
+  border: 1px solid var(--border-color);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+/* ── Form Header ── */
+.reg-form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reg-brand-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: 14px;
+  font-size: 26px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px auto;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+}
+
+.reg-title {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.reg-sub {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── 2-Column Row ── */
+.reg-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
+/* ── Field Block ── */
+.reg-field {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.reg-field-full {
+  grid-column: 1 / -1;
+}
+
+/* ── Label ── */
+.reg-label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 6px;
+  transition: color 0.2s;
+}
+
+.req-star {
+  color: #dc2626;
+  margin-left: 2px;
+}
+
+/* ── Input Wrapper ── */
+.reg-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.reg-input-icon {
+  display: none;
+}
+
+/* ── Text / Email / Tel / Password Inputs ── */
+.reg-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  background: var(--bg-card);
+  color: var(--text-main);
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.3s;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.reg-input::placeholder {
+  color: var(--text-light);
+}
+
+.reg-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.13);
+}
+
+/* ── Select ── */
+.reg-select-wrap::after {
+  content: '▾';
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.reg-select {
+  padding-right: 34px;
+  cursor: pointer;
+}
+
+/* ── Valid / Invalid States ── */
+.reg-field.is-valid .reg-input,
+.reg-field.is-valid .reg-select {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.11);
+}
+
+.reg-field.is-invalid .reg-input,
+.reg-field.is-invalid .reg-select {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.11);
+  animation: shake 0.35s ease;
+}
+
+@keyframes shake {
+  0%  { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+  100%{ transform: translateX(0); }
+}
+
+/* ── Valid tick / Invalid cross icons inside input ── */
+.reg-field.is-valid .reg-input-wrap::after {
+  content: '✓';
+  position: absolute;
+  right: 12px;
+  color: #16a34a;
+  font-size: 15px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.reg-field.is-invalid .reg-input-wrap::after {
+  content: '✗';
+  position: absolute;
+  right: 12px;
+  color: #dc2626;
+  font-size: 15px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+/* eye button needs right padding when present */
+.reg-input-wrap:has(.reg-eye-btn) .reg-input {
+  padding-right: 44px;
+}
+
+/* For browsers that don't support :has() */
+.reg-input.has-eye {
+  padding-right: 44px;
+}
+
+/* ── Eye Toggle Button ── */
+.reg-eye-btn {
+  all: unset;
+  position: absolute;
+  right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  line-height: 1;
+  transition: opacity 0.2s;
+  opacity: 0.6;
+  color: var(--text-muted);
+}
+
+.reg-eye-btn:hover {
+  opacity: 1;
+}
+
+.reg-eye-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+/* ── Error Message ── */
+.reg-error {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #dc2626;
+  margin-top: 5px;
+  min-height: 18px;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+
+.reg-field.is-invalid .reg-error {
+  opacity: 1;
+}
+
+/* ── Password Strength Bar ── */
+.strength-bar-wrap {
+  margin-top: 8px;
+}
+
+.strength-bar {
+  height: 6px;
+  background: var(--border-subtle);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.strength-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  transition: width 0.4s ease, background 0.4s ease;
+}
+
+.strength-fill.weak   { width: 25%; background: #ef4444; }
+.strength-fill.fair   { width: 50%; background: #f97316; }
+.strength-fill.good   { width: 75%; background: #eab308; }
+.strength-fill.strong { width: 100%; background: #16a34a; }
+
+/* ── Strength Label ── */
+.strength-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 5px;
+  min-height: 16px;
+  transition: color 0.3s;
+}
+
+.strength-label.weak   { color: #ef4444; }
+.strength-label.fair   { color: #f97316; }
+.strength-label.good   { color: #eab308; }
+.strength-label.strong { color: #16a34a; }
+
+/* ── Password Requirements List ── */
+.pwd-requirements {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pwd-req {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  transition: color 0.25s ease;
+  margin: 0;
+}
+
+.pwd-req.met {
+  color: #16a34a;
+}
+
+/* ── Radio Group (Gender) ── */
+.reg-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reg-fieldset legend.reg-label {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.reg-radio-group {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.reg-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  cursor: pointer;
+  user-select: none;
+  padding: 8px 16px 8px 10px;
+  border-radius: 10px;
+  border: 1.5px solid var(--border-subtle);
+  background: var(--bg-card);
+  transition: border-color 0.2s ease, background 0.2s ease;
+  margin: 0;
+}
+
+.reg-radio-label:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.reg-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.reg-radio-custom {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--border-subtle);
+  background: var(--bg-card);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.2s ease;
+}
+
+.reg-radio:checked + .reg-radio-custom {
+  border-color: var(--primary);
+  background: var(--primary);
+  box-shadow: inset 0 0 0 3px var(--bg-card);
+}
+
+.reg-radio:focus-visible + .reg-radio-custom {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Highlight selected radio label */
+.reg-radio-label:has(.reg-radio:checked) {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+/* ── Terms Checkbox ── */
+.reg-terms-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  font-weight: 500;
+  user-select: none;
+  margin: 0;
+}
+
+.reg-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.reg-checkbox-custom {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--border-subtle);
+  background: var(--bg-card);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  font-size: 13px;
+}
+
+.reg-checkbox:checked + .reg-checkbox-custom {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: white;
+}
+
+.reg-checkbox:checked + .reg-checkbox-custom::before {
+  content: '✓';
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.reg-checkbox:focus-visible + .reg-checkbox-custom {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.reg-terms-text {
+  line-height: 1.6;
+}
+
+/* ── Terms invalid ── */
+.reg-field.is-invalid .reg-checkbox-custom {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.11);
+}
+
+/* ── reg-link ── */
+.reg-link {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.reg-link:hover {
+  text-decoration: underline;
+}
+
+.reg-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ── Submit Button ── */
+.reg-submit {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 24px;
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.22);
+}
+
+.reg-submit:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+}
+
+.reg-submit:active {
+  transform: translateY(0);
+}
+
+.reg-submit:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.reg-submit-icon {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.reg-submit:hover .reg-submit-icon {
+  transform: translateX(4px);
+}
+
+/* ── Login Link ── */
+.reg-login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+/* ── Dark Mode ── */
+body.dark-mode .reg-form {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+}
+
+body.dark-mode .reg-input,
+body.dark-mode .reg-select {
+  background: #0f172a;
+  color: #f8fafc;
+  border-color: var(--border-color);
+}
+
+body.dark-mode .reg-input::placeholder {
+  color: #475569;
+}
+
+body.dark-mode .reg-input:focus,
+body.dark-mode .reg-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+}
+
+body.dark-mode .reg-radio-label {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode .reg-radio-custom,
+body.dark-mode .reg-checkbox-custom {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+body.dark-mode .strength-bar {
+  background: #334155;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .auth-simple-header {
+    min-height: 60px;
+    gap: 10px;
+    padding: 10px 14px;
+  }
+
+  .auth-simple-header .brand {
+    gap: 8px;
+  }
+
+  .auth-simple-header .brand-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+  }
+
+  .auth-simple-header .brand-text {
+    font-size: 16px;
+  }
+
+  .auth-header-link {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .auth-header-actions {
+    gap: 10px;
+  }
+
+  .reg-form {
+    padding: 24px 18px;
+    border-radius: 14px;
+  }
+
+  .reg-row {
+    grid-template-columns: 1fr;
+  }
+
+  .reg-radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .reg-title {
+    font-size: 18px;
+  }
+}

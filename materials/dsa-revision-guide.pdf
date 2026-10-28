@@ -1,0 +1,196 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 2647 >>
+stream
+BT
+/F2 18 Tf
+52 790 Td
+(Data Structures & Algorithms) Tj
+/F1 9 Tf
+0 -22 Td
+(Student Hub | Original study summary | For revision and self-study) Tj
+0 -18 Td
+/F1 9 Tf
+1 0 0 1 52 750 Tm
+/F2 11 Tf
+(Course) Tj
+1 0 0 1 52 734 Tm
+/F1 9 Tf
+(CS301 | Student Hub Original Revision Guide) Tj
+1 0 0 1 52 713 Tm
+/F2 11 Tf
+(How to use this guide) Tj
+1 0 0 1 52 697 Tm
+/F1 9 Tf
+(Use each structure to explain the operation, its cost, and when it is a good choice. Verify) Tj
+1 0 0 1 52 684 Tm
+/F1 9 Tf
+(complexity assumptions against the exact implementation.) Tj
+1 0 0 1 52 663 Tm
+/F2 11 Tf
+(1. Measuring algorithms) Tj
+1 0 0 1 52 647 Tm
+/F1 9 Tf
+(Big-O describes how an upper bound grows with input size. Common orders are O\(1\), O\(log n\),) Tj
+1 0 0 1 52 634 Tm
+/F1 9 Tf
+(O\(n\), O\(n log n\), O\(n^2\), and O\(2^n\). State whether you mean time or auxiliary space.) Tj
+1 0 0 1 52 613 Tm
+/F2 11 Tf
+(2. Arrays and linked lists) Tj
+1 0 0 1 52 597 Tm
+/F1 9 Tf
+(Arrays support indexed access in O\(1\); inserting in the middle usually shifts elements and) Tj
+1 0 0 1 52 584 Tm
+/F1 9 Tf
+(costs O\(n\). Linked lists insert at a known node in O\(1\), but finding a position takes O\(n\).) Tj
+1 0 0 1 52 563 Tm
+/F2 11 Tf
+(3. Stacks, queues, and hashing) Tj
+1 0 0 1 52 547 Tm
+/F1 9 Tf
+(A stack is last-in, first-out; a queue is first-in, first-out. A hash table has expected) Tj
+1 0 0 1 52 534 Tm
+/F1 9 Tf
+(O\(1\) lookup with a good hash and controlled load factor, but collisions and resizing affect) Tj
+1 0 0 1 52 521 Tm
+/F1 9 Tf
+(its worst case.) Tj
+1 0 0 1 52 500 Tm
+/F2 11 Tf
+(4. Trees and graphs) Tj
+1 0 0 1 52 484 Tm
+/F1 9 Tf
+(A balanced search tree supports search, insert, and delete in O\(log n\); an unbalanced tree) Tj
+1 0 0 1 52 471 Tm
+/F1 9 Tf
+(can degrade to O\(n\). Breadth-first search uses a queue; depth-first search uses a stack or) Tj
+1 0 0 1 52 458 Tm
+/F1 9 Tf
+(recursion. Both visit vertices and edges in O\(V + E\) with adjacency lists.) Tj
+1 0 0 1 52 437 Tm
+/F2 11 Tf
+(5. Sorting and selection) Tj
+1 0 0 1 52 421 Tm
+/F1 9 Tf
+(Merge sort runs in O\(n log n\) time and needs extra array space. Quicksort is commonly O\(n) Tj
+1 0 0 1 52 408 Tm
+/F1 9 Tf
+(log n\) but has O\(n^2\) worst-case time. Choose stable sorting when equal-key order must be) Tj
+1 0 0 1 52 395 Tm
+/F1 9 Tf
+(preserved.) Tj
+1 0 0 1 52 374 Tm
+/F2 11 Tf
+(Study checklist) Tj
+1 0 0 1 52 358 Tm
+/F1 9 Tf
+(For each problem: define input and output, choose a structure, write the invariant, estimate) Tj
+1 0 0 1 52 345 Tm
+/F1 9 Tf
+(time and space, then test empty, one-item, duplicate, and large inputs.) Tj
+ET
+BT
+/F1 8 Tf
+52 28 Td
+(Student Hub CS study guide - page 1 of 2) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 1455 >>
+stream
+BT
+/F2 18 Tf
+52 790 Td
+(Data Structures & Algorithms) Tj
+/F1 9 Tf
+0 -22 Td
+(Student Hub | Original study summary | For revision and self-study) Tj
+0 -18 Td
+/F1 9 Tf
+1 0 0 1 52 750 Tm
+/F2 11 Tf
+(Practice prompts) Tj
+1 0 0 1 52 734 Tm
+/F1 9 Tf
+(1\) When is a linked list preferable to an array? 2\) Why can a hash table have a worst case) Tj
+1 0 0 1 52 721 Tm
+/F1 9 Tf
+(above O\(1\)? 3\) Which traversal finds shortest paths in an unweighted graph? 4\) What property) Tj
+1 0 0 1 52 708 Tm
+/F1 9 Tf
+(makes a sorting algorithm stable?) Tj
+1 0 0 1 52 687 Tm
+/F2 11 Tf
+(Suggested answers) Tj
+1 0 0 1 52 671 Tm
+/F1 9 Tf
+(1\) When frequent insertions/removals occur at known nodes and random indexing is not needed.) Tj
+1 0 0 1 52 658 Tm
+/F1 9 Tf
+(2\) Collisions can collect many keys in one bucket. 3\) Breadth-first search. 4\) Equal-key) Tj
+1 0 0 1 52 645 Tm
+/F1 9 Tf
+(items keep their original relative order.) Tj
+1 0 0 1 52 624 Tm
+/F2 11 Tf
+(Before an exam) Tj
+1 0 0 1 52 608 Tm
+/F1 9 Tf
+(Trace one stack, queue, tree rotation, graph traversal, and sort by hand. For each trace,) Tj
+1 0 0 1 52 595 Tm
+/F1 9 Tf
+(label the data structure state after every operation.) Tj
+1 0 0 1 52 574 Tm
+/F2 11 Tf
+(Further reading) Tj
+1 0 0 1 52 558 Tm
+/F1 9 Tf
+(MIT OpenCourseWare 6.006 and the OpenDSA project are linked from the Student Hub Course) Tj
+1 0 0 1 52 545 Tm
+/F1 9 Tf
+(Materials page.) Tj
+ET
+BT
+/F1 8 Tf
+52 28 Td
+(Student Hub CS study guide - page 2 of 2) Tj
+ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000000462 00000 n 
+0000003161 00000 n 
+0000003297 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+4804
+%%EOF

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course revision guides and trusted learning links for Student Hub courses.">
+    <title>Course Materials | Student Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=20261028.2">
+    <link rel="stylesheet" href="css/interactive.css?v=20261028.2">
+    <link rel="stylesheet" href="css/role-dashboard.css?v=20261028.2">
+    <link rel="stylesheet" href="css/course-materials.css?v=20261028.1">
+</head>
+<body>
+    <header class="app-header">
+        <a href="home.html" class="brand">
+            <span class="brand-icon">S</span>
+            <span class="brand-text">Student Hub</span>
+        </a>
+        <div class="header-nav">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="notice.html">Notifications</a>
+            <a href="contact.php">Contact</a>
+            <a href="profile.html" class="nav-profile-box" title="View Profile">
+                <span class="nav-profile-avatar">👤</span>
+                <span class="nav-profile-name">Palak K.</span>
+            </a>
+            <button class="theme-toggle" id="themeToggle" type="button" title="Toggle theme" aria-label="Toggle light/dark theme">🌙</button>
+        </div>
+    </header>
+
+    <main class="app-container materials-page">
+        <div class="breadcrumb"><a href="home.html">Home</a> / <span>Course Materials</span></div>
+
+        <section class="materials-intro">
+            <span class="materials-eyebrow">STUDY LIBRARY</span>
+            <h1 class="page-title">Course Materials</h1>
+            <p>Find concise revision guides and trusted online references for the subjects in your course list.</p>
+            <div class="materials-note"><span aria-hidden="true">i</span> These Student Hub PDFs are original study summaries for revision, not official lecture notes or exam material.</div>
+        </section>
+
+        <section class="materials-toolbar" aria-label="Find materials">
+            <label for="material-search">Search subjects or topics</label>
+            <input id="material-search" type="search" placeholder="Try algorithms, SQL, processes, TCP/IP" autocomplete="off">
+            <p id="material-count" aria-live="polite">4 subjects</p>
+        </section>
+
+        <section class="materials-grid" id="materials-list" aria-label="Materials by subject">
+            <article class="subject-material-card" id="dsa" data-search="dsa data structures algorithms arrays linked lists stacks queues trees graphs sorting complexity">
+                <div class="subject-card-heading">
+                    <span class="subject-icon subject-icon-blue" aria-hidden="true">DS</span>
+                    <div><p class="subject-code">CS301 · 4 CREDITS</p><h2>Data Structures &amp; Algorithms</h2></div>
+                </div>
+                <p class="subject-description">Core structures, algorithm analysis, and a practical plan for choosing the right approach.</p>
+                <div class="subject-topics"><span>Big-O</span><span>Linear structures</span><span>Trees &amp; graphs</span></div>
+                <div class="material-resource">
+                    <span class="file-icon" aria-hidden="true">PDF</span>
+                    <div class="resource-copy"><strong>DSA Revision Guide</strong><small>Original Student Hub notes · PDF</small></div>
+                    <a class="resource-action" href="materials/dsa-revision-guide.pdf" target="_blank" rel="noopener">Open PDF <span aria-hidden="true">↗</span></a>
+                </div>
+                <h3 class="reference-heading">Trusted references</h3>
+                <ul class="reference-list">
+                    <li><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/" target="_blank" rel="noopener noreferrer">MIT OpenCourseWare: Introduction to Algorithms</a></li>
+                    <li><a href="https://opendsa-server.cs.vt.edu/" target="_blank" rel="noopener noreferrer">OpenDSA: interactive data structures and algorithms</a></li>
+                </ul>
+            </article>
+
+            <article class="subject-material-card" id="dbms" data-search="dbms database systems sql relational model er diagrams normalization keys joins transactions">
+                <div class="subject-card-heading">
+                    <span class="subject-icon subject-icon-purple" aria-hidden="true">DB</span>
+                    <div><p class="subject-code">CS302 · 4 CREDITS</p><h2>Database Management Systems</h2></div>
+                </div>
+                <p class="subject-description">Relational design, SQL, normalization, transactions, and reliable database habits.</p>
+                <div class="subject-topics"><span>Relational model</span><span>SQL</span><span>Transactions</span></div>
+                <div class="material-resource">
+                    <span class="file-icon" aria-hidden="true">PDF</span>
+                    <div class="resource-copy"><strong>DBMS Revision Guide</strong><small>Original Student Hub notes · PDF</small></div>
+                    <a class="resource-action" href="materials/dbms-revision-guide.pdf" target="_blank" rel="noopener">Open PDF <span aria-hidden="true">↗</span></a>
+                </div>
+                <h3 class="reference-heading">Trusted references</h3>
+                <ul class="reference-list">
+                    <li><a href="https://www.postgresql.org/docs/current/tutorial.html" target="_blank" rel="noopener noreferrer">PostgreSQL: SQL language tutorial</a></li>
+                    <li><a href="https://sqlbolt.com/" target="_blank" rel="noopener noreferrer">SQLBolt: interactive SQL lessons</a></li>
+                </ul>
+            </article>
+
+            <article class="subject-material-card" id="os" data-search="operating systems os processes threads scheduling memory virtual memory deadlock file systems">
+                <div class="subject-card-heading">
+                    <span class="subject-icon subject-icon-green" aria-hidden="true">OS</span>
+                    <div><p class="subject-code">CS303 · 3 CREDITS</p><h2>Operating Systems</h2></div>
+                </div>
+                <p class="subject-description">How operating systems manage processes, memory, storage, and shared resources.</p>
+                <div class="subject-topics"><span>Processes</span><span>Memory</span><span>File systems</span></div>
+                <div class="material-resource">
+                    <span class="file-icon" aria-hidden="true">PDF</span>
+                    <div class="resource-copy"><strong>Operating Systems Revision Guide</strong><small>Original Student Hub notes · PDF</small></div>
+                    <a class="resource-action" href="materials/os-revision-guide.pdf" target="_blank" rel="noopener">Open PDF <span aria-hidden="true">↗</span></a>
+                </div>
+                <h3 class="reference-heading">Trusted references</h3>
+                <ul class="reference-list">
+                    <li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" rel="noopener noreferrer">OSTEP: free online operating systems book</a></li>
+                    <li><a href="https://docs.kernel.org/" target="_blank" rel="noopener noreferrer">Linux kernel documentation</a></li>
+                </ul>
+            </article>
+
+            <article class="subject-material-card" id="networks" data-search="computer networks tcp ip osi ethernet routing subnet dns http transport layer">
+                <div class="subject-card-heading">
+                    <span class="subject-icon subject-icon-orange" aria-hidden="true">CN</span>
+                    <div><p class="subject-code">CS304 · 3 CREDITS</p><h2>Computer Networks</h2></div>
+                </div>
+                <p class="subject-description">A structured overview of network layers, addressing, routing, and common protocols.</p>
+                <div class="subject-topics"><span>OSI &amp; TCP/IP</span><span>Addressing</span><span>Routing</span></div>
+                <div class="material-resource">
+                    <span class="file-icon" aria-hidden="true">PDF</span>
+                    <div class="resource-copy"><strong>Computer Networks Revision Guide</strong><small>Original Student Hub notes · PDF</small></div>
+                    <a class="resource-action" href="materials/networking-revision-guide.pdf" target="_blank" rel="noopener">Open PDF <span aria-hidden="true">↗</span></a>
+                </div>
+                <h3 class="reference-heading">Trusted references</h3>
+                <ul class="reference-list">
+                    <li><a href="https://www.netacad.com/courses/networking" target="_blank" rel="noopener noreferrer">Cisco Networking Academy: networking courses</a></li>
+                    <li><a href="https://www.cloudflare.com/learning/network-layer/what-is-a-computer-network/" target="_blank" rel="noopener noreferrer">Cloudflare Learning: computer networks explained</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <p class="materials-empty" id="materials-empty" hidden>No subjects match that search. Try another subject or topic.</p>
+    </main>
+
+    <footer class="app-footer"><p>© 2026 Student Hub Portal. All rights reserved.</p></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js?v=20261028.4"></script>
+    <script src="js/interactive.js?v=20261028.2"></script>
+    <script src="js/course-materials.js?v=20261028.1"></script>
+</body>
+</html>

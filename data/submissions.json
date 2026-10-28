@@ -1,0 +1,83 @@
+
+    {
+        "id": "SUB-6ADE03154D674",
+        "timestamp": "2026-10-25 14:24:37",
+        "formType": "Registration Form",
+        "enrollmentNumber": "25CS111",
+        "fullName": "RUHI Kansagara",
+        "email": "25cs111@charusat.edu.in",
+        "mobile": "9876543210",
+        "course": "B.Tech IT",
+        "year": "3",
+        "gender": "female"
+    },
+    {
+        "id": "SUB-6ADE02321487A",
+        "timestamp": "2026-10-25 14:20:50",
+        "formType": "Registration Form",
+        "enrollmentNumber": "25CS111",
+        "fullName": "RUHI Kansagara",
+        "email": "25cs111@charusat.edu.in",
+        "mobile": "9876543210",
+        "course": "B.Tech IT",
+        "year": "3",
+        "gender": "female"
+    },
+    {
+        "id": "CNT-671A2B3C001",
+        "timestamp": "2026-10-16 10:15:42",
+        "formType": "Contact Inquiry",
+        "fullName": "Palak Kansagara",
+        "email": "palak.kansagara@college.edu",
+        "mobile": "9876543210",
+        "category": "General Query",
+        "subject": "Inquiry regarding mid-term exam schedule",
+        "message": "Hello, I would like to know when the detailed timetable for semester 3 mid-terms will be published on the portal."
+    },
+    {
+        "id": "SUB-671A2B3C002",
+        "timestamp": "2026-10-16 10:45:18",
+        "formType": "Registration Form",
+        "enrollmentNumber": "25CS030",
+        "fullName": "Aarav Shah",
+        "email": "aarav.shah@college.edu",
+        "mobile": "9812345678",
+        "course": "B.Tech CSE",
+        "year": "3",
+        "gender": "Male"
+    },
+    {
+        "id": "CNT-671A2B3C003",
+        "timestamp": "2026-10-16 11:20:55",
+        "formType": "Contact Inquiry",
+        "fullName": "Sneha Joshi",
+        "email": "sneha.joshi@college.edu",
+        "mobile": "9765432109",
+        "category": "Fees & Accounts",
+        "subject": "Fee payment receipt not received",
+        "message": "I made the fee payment 3 days ago but have not received the receipt on my registered email. Please resolve this urgently."
+    },
+    {
+        "id": "SUB-671A2B3C004",
+        "timestamp": "2026-10-16 12:05:33",
+        "formType": "Registration Form",
+        "enrollmentNumber": "25IT015",
+        "fullName": "Rohan Patel",
+        "email": "rohan.patel@college.edu",
+        "mobile": "9898765432",
+        "course": "B.Tech IT",
+        "year": "1",
+        "gender": "Male"
+    },
+    {
+        "id": "CNT-671A2B3C005",
+        "timestamp": "2026-10-16 13:42:10",
+        "formType": "Contact Inquiry",
+        "fullName": "Nisha Rana",
+        "email": "nisha.rana@college.edu",
+        "mobile": "9321098765",
+        "category": "Technical Support",
+        "subject": "Unable to login to Student Hub Portal",
+        "message": "My account gets locked every time I try to login. I have tried the forgot password option but the reset email is not arriving."
+    }
+]

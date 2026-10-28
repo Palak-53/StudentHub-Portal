@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Details | Student Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (Grid & Flexbox Design System) -->
+    <link rel="stylesheet" href="css/style.css?v=20261028.2">
+    <link rel="stylesheet" href="css/interactive.css?v=20261028.2">
+    <link rel="stylesheet" href="css/role-dashboard.css?v=20261028.2">
+</head>
+<body>
+
+    <header class="app-header">
+        <a href="home.html" class="brand">
+            <span class="brand-icon">S</span>
+            <span class="brand-text">Student Hub</span>
+        </a>
+        <div class="header-nav">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="notice.html">Notifications</a>
+            <a href="contact.php">Contact</a>
+            <a href="profile.html" class="nav-profile-box" title="View Profile">
+                <span class="nav-profile-avatar">👤</span>
+                <span class="nav-profile-name">Palak K.</span>
+            </a>
+            <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+        </div>
+    </header>
+
+    <main class="app-container">
+
+        <div class="breadcrumb">
+            <a href="home.html">Home</a> / <span>Fees Details</span>
+        </div>
+
+        <h1 class="page-title">Fees & Payment Details</h1>
+
+        <!-- Stat Cards -->
+        <div class="stat-grid">
+            <div class="stat-card">
+                <div class="stat-value blue">₹ 65,000</div>
+                <div class="stat-label">Total Semester Fee (3rd Sem)</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-value green">₹ 65,000</div>
+                <div class="stat-label">Total Amount Paid</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-value green">₹ 0</div>
+                <div class="stat-label">Pending Dues</div>
+            </div>
+        </div>
+
+        <!-- Fee Breakdown Table -->
+        <h2>Semester Fee Breakdown</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fee Head</th>
+                        <th>Amount</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: 700; text-align: left;">Tuition Fee</td>
+                        <td>₹ 45,000</td>
+                        <td>15 Jul 2026</td>
+                        <td><span class="badge-tag low" style="color:#16a34a; background:#dcfce7; border-color:#16a34a;">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700; text-align: left;">Laboratory & Computer Lab Fee</td>
+                        <td>₹ 10,000</td>
+                        <td>15 Jul 2026</td>
+                        <td><span class="badge-tag low" style="color:#16a34a; background:#dcfce7; border-color:#16a34a;">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700; text-align: left;">Library & Resource Fee</td>
+                        <td>₹ 5,000</td>
+                        <td>15 Jul 2026</td>
+                        <td><span class="badge-tag low" style="color:#16a34a; background:#dcfce7; border-color:#16a34a;">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 700; text-align: left;">Examination & Development Fee</td>
+                        <td>₹ 5,000</td>
+                        <td>15 Jul 2026</td>
+                        <td><span class="badge-tag low" style="color:#16a34a; background:#dcfce7; border-color:#16a34a;">Paid</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Payment History Table -->
+        <h2>Payment Receipts History</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Receipt No.</th>
+                        <th>Date</th>
+                        <th>Transaction ID</th>
+                        <th>Amount Paid</th>
+                        <th>Mode</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: 700;">REC-2026-0391</td>
+                        <td>10 Jul 2026</td>
+                        <td>TXN88291039</td>
+                        <td class="val-green">₹ 65,000</td>
+                        <td>Online (UPI / NetBanking)</td>
+                        <td><button class="btn-download" onclick="alert('Downloading Fee Receipt REC-2026-0391...')">📥 Receipt</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="app-footer">
+        <p>© 2026 Student Hub Portal. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js?v=20261028.4"></script>
+    <script src="js/interactive.js?v=20261028.2"></script>
+</body>
+</html>

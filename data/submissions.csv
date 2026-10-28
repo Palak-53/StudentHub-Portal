@@ -1,0 +1,6 @@
+id,timestamp,formType,fullName,email,mobile,category,subject,message
+CNT-671A2B3C001,2026-10-16 10:15:42,Contact Inquiry,Palak Kansagara,palak.kansagara@college.edu,9876543210,General Query,Inquiry regarding mid-term exam schedule,Hello I would like to know when the detailed timetable for semester 3 mid-terms will be published on the portal.
+SUB-671A2B3C002,2026-10-16 10:45:18,Registration Form,Aarav Shah,aarav.shah@college.edu,9812345678,,,
+CNT-671A2B3C003,2026-10-16 11:20:55,Contact Inquiry,Sneha Joshi,sneha.joshi@college.edu,9765432109,Fees & Accounts,Fee payment receipt not received,I made the fee payment 3 days ago but have not received the receipt on my registered email.
+SUB-671A2B3C004,2026-10-16 12:05:33,Registration Form,Rohan Patel,rohan.patel@college.edu,9898765432,,,
+CNT-671A2B3C005,2026-10-16 13:42:10,Contact Inquiry,Nisha Rana,nisha.rana@college.edu,9321098765,Technical Support,Unable to login to Student Hub Portal,My account gets locked every time I try to login. I have tried the forgot password option but the reset email is not arriving.
